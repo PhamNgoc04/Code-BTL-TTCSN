@@ -40,6 +40,9 @@ header:hover {
     position: relative;
 }
 
+
+
+/*-----Menu của Nữ----------*/
 .sub-menu {
     visibility: hidden;
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
@@ -47,7 +50,7 @@ header:hover {
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
     top: 100%;
     background-color: white;
-    padding: 10px 0 10px 30px;
+    padding: 20px 65px 10px 30px;
     transition: 0.3s;
     width: 150px;
     z-index: 1;
@@ -60,13 +63,209 @@ header:hover {
 
 .sub-menu ul a {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 20px;
+}/**/
+
+
+/*-----Menu của Nam----------*/
+.sub-menu-nam {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 60px 10px 30px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
 }
 
+.sub-menu-nam ul {
+    padding-left: 1px;
+}
+
+.sub-menu-nam ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của trẻ em----------*/
+.sub-menu-treem {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 60px 10px 30px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-treem ul {
+    padding-left: 1px;
+}
+
+.sub-menu-treem ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của flash sale----------*/
+.sub-menu-flashsale {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 100px 10px 10px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-flashsale ul {
+    padding-left: 1px;
+}
+
+.sub-menu-flashsale ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của hot items----------*/
+.sub-menu-hotitems {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 45px 10px 10px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-hotitems ul {
+    padding-left: 1px;
+}
+
+.sub-menu-hotitems ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của bô sưu tập----------*/
+.sub-menu-bosuutap {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 95px 10px 10px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-bosuutap ul {
+    padding-left: 1px;
+}
+
+.sub-menu-bosuutap ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của thông tin----------*/
+.sub-menu-thongtin {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 100%;
+    background-color: white;
+    padding: 10px 110px 10px 10px;
+    transition: 0.3s;
+    width: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-thongtin ul {
+    padding-left: 1px;
+}
+
+.sub-menu-thongtin ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+
+/*-----Menu của Nữ----------*/
 .menu li:hover > .sub-menu {
     top: 45px;
     visibility: visible;
 }
+/**/
+
+/*-----Menu của Nam----------*/
+.menu li:hover > .sub-menu-nam {
+    top: 45px;
+    visibility: visible;
+}
+/**/
+
+/*-----Menu của trẻ em----------*/
+.menu li:hover > .sub-menu-treem {
+    top: 45px;
+    visibility: visible;
+}
+/**/
+
+/*-----Menu của flash sale----------*/
+.menu li:hover > .sub-menu-flashsale {
+    top: 45px;
+    visibility: visible;
+}
+/**/
+
+/*-----Menu của hotitems----------*/
+.menu li:hover > .sub-menu-hotitems {
+    top: 45px;
+    visibility: visible;
+}
+/**/
+
+/*-----Menu của bộ sưu tập----------*/
+.menu li:hover > .sub-menu-bosuutap {
+    top: 45px;
+    visibility: visible;
+}
+/**/
+
+/*-----Menu của bộ sưu tập----------*/
+.menu li:hover > .sub-menu-thongtin {
+    top: 45px;
+    visibility: visible;
+}
+/**/
 
 .menu li:hover > ul {
     display: block; /* Hiện cả sub-menu và ul bên trong khi hover */
@@ -78,7 +277,7 @@ header:hover {
 
 .menu li ul li {
     display: block; /* Đặt các li trong sub-menu thành cột */
-    font-size: 20px; /* Tăng kích thước chữ cho các mục trong sub-menu */
+    font-size: 22px; /* Tăng kích thước chữ cho các mục trong sub-menu */
 }
 
 .menu li ul li a {
@@ -121,7 +320,7 @@ header:hover {
 }
 
 .other > li:first-child input {
-    width: 100%;
+    width: 200px; /*--Để chỉnh độ dài ngắn của tìm kiếm---*/
     border: none;
     border-bottom: 1px solid #333;
     background: transparent;
@@ -139,12 +338,13 @@ header:hover {
 }
 
 .search-container input {
-    width: 250px;
+    width: 200px;
     height: 40px;
     padding: 8px 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border 0.3s;
+    font-size: 20px;
 }
 
 .search-container img.icon {
@@ -157,6 +357,8 @@ header:hover {
 }
 
 #slider {
+    width: 100%;
+    height: 100%;
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
     overflow: hidden;
@@ -220,7 +422,7 @@ header:hover {
 .app-container {
     line-height: 20px; 
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 25px;
     color: #000;
     font-weight: bold;
 }
@@ -232,6 +434,7 @@ header:hover {
     padding-bottom: 20px;
     text-align: center;
     outline: none;
+    font-size: 20px;
 }
 
 /*--------------------------footer------------------------*/
@@ -248,6 +451,7 @@ footer {
     align-items: center;
     margin-bottom: 20px;
     height: 7px;
+    font-size: 25px;
 }
 
 
@@ -292,4 +496,5 @@ footer {
 
 .footer-center {
     text-align: center;
+    font-size: 22px;
 }
