@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <ul class="menu">
+        <li><a href="#">NỮ</a>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Colection</a></li>
+                <li><a href="">Áo</a>
+                    <ul>
+                        <li><a href="#">Áo sơ mi</a></li>
+                        <li><a href="#">Áo thun</a></li>
+                        <li><a href="#">Áo Vest</a></li>
+                        <li><a href="#">Áo Khoác</a></li>
+                        <li><a href="#">Áo Len</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Quần</a>
+                    <ul>
+                        <li><a href="#">Quần Jean</a></li>
+                        <li><a href="#">Quần lửng</a></li>
+                        <li><a href="#">Quần dài</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">NAM</a></li>
+        <li><a href="#">TRẺ EM</a></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">KHẨU TRANG - BỘ BẢO HỘ</a></li>
+        <li><a href="#">BỘ SƯU TẬP</a></li>
+        <li><a href="#">THÔNG TIN</a></li>
+    </ul>
+
+    <ul class="other">
+        <li>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm">
+                <img src="images/icon_timkiem.png" alt="Tìm kiếm" class="icon">
+            </div>
+        </li>
+        <li>
+            <a href="#"><img src="images/icon_trogiup.png" alt="Trợ giúp" class="icon"></a>
+        </li>
+        <li>
+            <a href="#"><img src="images/icon_user.png" alt="User" class="icon"></a>
+        </li>
+        <li>
+            <a href="#"><img src="images/icon_giohang.png" alt="Giỏ hàng" class="icon"></a>
+        </li>
+    </ul>
+</header>
+
+<section id="slider">
+<div class="aspect-ratio-169">
+    <img src="images/anh_1.webp" alt="">
+    <img src="images/anh_2.webp" alt="">
+    <img src="images/anh_3.webp" alt="">
+    <img src="images/anh_4.webp" alt="">
+    <img src="images/anh_5.jpg" alt="">
+</div>
+
+<div class="dot-container">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+</section>
+
+<section class="app-container">
+    <p>Tải ứng dụng IVY moda</p>
+    <div class="app-google">
+        <img src="images/appstore.png" alt="">
+        <img src="images/googleplay.png" alt="">
+    </div>
+    <p>Nhận bản tin IVY moda</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+
+<!--------------footer---------------->
+
+<div class="footer-top">
+    <li><a href=""><img src="images/thongbao.png" alt=""></a><li>
+    <li><a href=""></a>Liên hệ</li>
+    <li><a href=""></a>Tuyển dụng</li>
+    <li><a href=""></a>Giới thiệu</li>
+    <li>
+        <a href="" class="fab fa-facebook-f" ></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>
+    </li>
+</div>
+
+<div class="footer-center">
+    <p>
+        Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+        Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0243 205 2222 <br>
+        Đặt hàng online:   <span><b>  0246 662 3434</b></span>.
+    </p>
+</div>
+
+<div class="footer-bottom">
+    ©IVYmoda All rights reserved
+</div>
+
+</body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector(".aspect-ratio-169")
+    const dotItem = document.querySelectorAll(".dot")
+    let index = 0 
+    let imgNumber = imgPosition.length
+    // console.log(imgPosition);
+    // Đặt vị trí cho các hình ảnh
+    imgPosition.forEach(function(image, index) {
+        image.style.left= index*100 + "%"
+        dotItem[index].addEventListener("click", function() {
+            slider(index)
+        })
+})
+
+//Tự động chuyển sile
+function imgSlide() {
+    index++;
+    if (index >= imgNumber) {
+        index = 0
+    }
+    slider(index)
+}
+
+// Hàm chuyển slide
+function slider(index) {
+    imgContainer.style.transform = "translateX(-" + index * 100 + "%)";
+    const dotActive = document.querySelector(".dot.active");
+    if (dotActive) {
+        dotActive.classList.remove("active");
+    }
+    dotItem[index].classList.add("active");
+}
+
+setInterval(imgSlide, 5000)
+</script>
+</html>
