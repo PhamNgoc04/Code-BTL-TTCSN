@@ -417,6 +417,8 @@ header:hover {
 
 .app-google img {
     height: 50px;
+        text-decoration: none;
+
 }
 
 .app-container {
