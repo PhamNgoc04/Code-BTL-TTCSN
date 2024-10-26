@@ -42,7 +42,7 @@ header:hover {
 }
 
 .menu li {
-    margin: 0 20px;
+    margin: 0 10px;
     position: relative;
 }
 
@@ -54,11 +54,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 50px;
     background-color: white;
     padding: 20px 65px 10px 30px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -79,11 +78,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 60px 10px 30px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -104,11 +102,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 60px 10px 30px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -129,11 +126,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 100px 10px 10px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -154,11 +150,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 45px 10px 10px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -179,11 +174,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 95px 10px 10px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -204,11 +198,10 @@ header:hover {
     position: absolute; /* Giữ nguyên vị trí tuyệt đối */
     background-color: white; /* Màu nền của sub-menu */
     border: 1px solid #ccc; /* Đường viền cho sub-menu */
-    top: 100%;
+    top: 60px;
     background-color: white;
     padding: 10px 110px 10px 10px;
-    transition: 0.3s;
-    width: 150px;
+    width: max-content;
     z-index: 1;
     background-color: #ffffff;
 }
@@ -226,50 +219,57 @@ header:hover {
 
 /*-----Menu của Nữ----------*/
 .menu li:hover > .sub-menu {
-    top: 45px;
+    top:40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của Nam----------*/
 .menu li:hover > .sub-menu-nam {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của trẻ em----------*/
 .menu li:hover > .sub-menu-treem {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của flash sale----------*/
 .menu li:hover > .sub-menu-flashsale {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của hotitems----------*/
 .menu li:hover > .sub-menu-hotitems {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của bộ sưu tập----------*/
 .menu li:hover > .sub-menu-bosuutap {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
 /*-----Menu của bộ sưu tập----------*/
 .menu li:hover > .sub-menu-thongtin {
-    top: 45px;
+    top: 40px;
     visibility: visible;
+    transition: 0.3s;
 }
 /**/
 
@@ -296,7 +296,7 @@ header:hover {
     padding: 10px 15px;
     color: #333;
     transition: color 0.3s;
-    line-height: 20px;
+    line-height: 40px;
     text-decoration: none; /* Loại bỏ gạch chân */
     font-weight: bold; /* Để chữ đậm */
 }
